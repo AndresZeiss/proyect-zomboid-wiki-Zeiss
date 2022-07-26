@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectZomboid/Suport</title>
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="../CSS/estilis.css">
+</head>
+<body class="fondo">
+    <header class="header">
+        <a href="../index.html"><img src="../imagenes/Logo.jpg"></a>
+        <a href="#abierto" class="icono">
+            <span class="jam jam-menu"></span>
+          </a>
+      
+          <nav class="nav" id="abierto">    
+            <ul class="fexmenu">
+                <li class="links">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="links">
+                    <a href="./mapas.html">Mapas</a>
+                </li>
+                <li class="links">
+                    <a href="./vehiculos.html">Vehiculos</a>
+                </li>
+                <li class="links">
+                    <a href="./profesiones.html">Profesiones</a>
+                </li>
+                <li class="links">
+                    <a href="./suport.html">Suport</a>
+                </li>
+                <li class="links link__no">
+                    <a href="#cerrado">❎</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <main class="main">
+        <form class="form">
+            <div>
+                <h2 class="texh2">Datos de usuario</h2>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="nombre de usuario">
+            </div>
+            <div>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Correo electronico">
+            </div>
+            <div>
+                <h2 class="texh2">Genero</h2>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="genero" value="male">
+                <label for="female">female</label>
+                <input type="radio" id="female" name="genero" value="female">
+                <label for="noespecificar">No especificar</label>
+                <input type="radio" id="noespecificar" name="genero" value="noespecificar">    
+            <div>
+            <div>
+                <label for="pais">País</label>
+                <select name="pais" id="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Mexico">Mexico</option>
+                </select>
+            </div>
+            <div>
+                <button>Enviar</button>
+            </div>                                    
+        </form>
+    </main>
+
+
+
+    <footer class="footer">
+        <nav>
+          <ul class="fexmenu">
+            <li class="links">
+              <a href="https://www.instagram.com/projectzomboid/" target="_blank" class="footer__icon">
+                <span class="jam jam-instagram"></span>
+              </a>
+            <li class="links">
+            <li class="links">
+              <a href="https://store.steampowered.com/app/108600/Project_Zomboid/" target="_blank">Buy now on Steam</a>
+            </li>
+            <li class="links">
+              <a href="https://twitter.com/theindiestone" target="_blank" class="footer__icon">
+                <span class="jam jam-twitter"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </footer>
+</body>
+</html>

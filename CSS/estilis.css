@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondo {
+    background-color: #333333;
+}
+.header { 
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.fexmenu {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+.links {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 16px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link__no {
+    display: none;
+}
+
+.icono {
+    font-size: 26px;
+    text-decoration: none;
+    display: none;
+}
+
+/* index */
+.grid_index {
+    border: 1px solid lightgrey; /* temporal */
+    padding: 1rem;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "tex vid"
+    "tex vid";
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+}
+.grid_titulo {
+    grid-area: tit;
+    
+    color: white;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.grid_texto {
+    grid-area: tex;
+    
+    color: white;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.grid_video {
+    grid-area: vid;
+    width: 560px;
+    height: 315px;
+    object-fit: cover;
+    
+}
+/* cosas */
+.main{
+    margin-top: 250px;
+}
+
+.titulo {
+    color: white;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.textos {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+    
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+.footer__icon {
+
+}
+
+/*  mapas */
+.listas {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/* vehiculos */
+.fexv {
+    display: flex;
+}
+    
+.vehiculos {
+    background-color: grey;
+    color: white;
+    width: 400px;
+    height: 400px;
+    padding: 16px;
+    margin: 32px;
+    border: 3px solid red;
+}
+.vtex {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+ }
+.vfoto {
+    width: 100%;
+    max-height: 200px;
+}
+.vtitulos {
+    color: white;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* suport*/
+
+.form {
+   background-color: white;
+   color: black;
+   width: 25%;
+   height: 400px;
+   padding: 16px;
+   margin: auto;
+}
+
+.texh2 {
+    color: black;
+    font-size: 18px;
+}
+
+/* media querys*/
+
+@media screen and (max-width:1023) {
+
+}
+
+@media screen and (max-width:425px) {
+    .nav {
+        display: none;
+        background-color: darkgray;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000000;
+        width: 80%;
+        height: 100hv;
+    }
+    .fexmenu {
+        flex-direction: column;
+        text-decoration: none;
+        align-items: flex-start;
+        gap: 1rem;
+        height: 100%;
+        
+    }
+    .link__no {
+        display: block;
+    }
+
+    .icono {
+        display: block;
+    }
+
+    .nav:target {
+        display: block;
+    }
+
+    .titulo {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
+    .grid_index {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 200px);
+        grid-template-areas: 
+        "vid"
+        "tex";
+        align-content: stretch;
+        gap: 1rem;
+        height: auto;
+    }  
+    .grid_texto {
+        font-size: 16px;
+    }
+    .grid_video {
+        height: 100%;
+        width: 100%;
+    }
+
+}
