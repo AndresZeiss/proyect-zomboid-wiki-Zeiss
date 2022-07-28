@@ -6,36 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project_Zomboid</title>
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/estilis.css">
-</head> <!-- usar solo un idioma xD -->
+</head>
 <body class="fondo">
-  <header class="header">
-    <a href="./index.html"><img src="./imagenes/logo.jpg"></a>
-    <a href="#abierto" class="icono">
-      <span class="jam jam-menu"></span>
-    </a>
-
-    <nav class="nav" id="abierto">
-      <ul class="fexmenu">
-        <li class="links">
-          <a href="./index.html">Inicio</a>
-        </li>
-        <li class="links">
-          <a href="./pags/mapas.html">Mapas</a>
-        </li>
-        <li class="links"i>
-          <a href="./pags/vehiculos.html">Vehiculos</a>
-        </li>
-        <li class="links">
-          <a href="./pags/profesiones.html">Profesiones</a>
-        </li>
-        <li class="links">
-          <a href="./pags/suport.html">Suport</a>
-        </li>
-        <li class="links link__no">
-          <a href="#cerrado">❎</a>
-        </li>
-      </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light flexmenu">
+      <div class="container-fluid flexmenu">
+        <a href="./index.html"><img src="./imagenes/logo.jpg"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item links">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item links">
+              <a class="nav-link active" aria-current="page" href="./pags/mapas.html">Mapas</a>
+            </li>
+            <li class="nav-item links">
+              <a class="nav-link" href="./pags/vehiculos.html">Vehiculos</a>
+            </li>
+            <li class="nav-item links">
+              <a class="nav-link" href="./pags/profesiones.html">Profesiones</a>
+            </li>
+            <li class="nav-item links">
+              <a class="nav-link" href="./pags/suport.html">Suport</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -81,5 +79,6 @@
       </ul>
     </nav>
   </footer>
+  <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
