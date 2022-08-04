@@ -107,7 +107,10 @@
 
 /* vehiculos */
 
-    
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+}    
 
 .vtex {
     color: white;
