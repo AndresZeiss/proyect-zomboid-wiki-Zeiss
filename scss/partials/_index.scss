@@ -1,0 +1,29 @@
+.grid_index {
+    padding: 1rem;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "tex vid"
+    "tex vid";
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid_texto {
+    grid-area: tex;
+    color: white;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.grid_video {
+    grid-area: vid;
+    width: 560px;
+    height: 315px;
+    object-fit: cover;
+    
+}

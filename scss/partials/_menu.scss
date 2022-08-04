@@ -1,0 +1,29 @@
+.header { 
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.fexmenu {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    }
+
+.links {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 16px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

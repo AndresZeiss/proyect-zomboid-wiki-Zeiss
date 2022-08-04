@@ -1,0 +1,62 @@
+@media screen and (max-width:1023) {
+
+}
+
+@media screen and (max-width:425px) {
+    .nav {
+        display: none;
+        background-color: darkgray;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000000;
+        width: 80%;
+        height: 100hv;
+    }
+    .fexmenu {
+        flex-direction: column;
+        text-decoration: none;
+        align-items: flex-start;
+        gap: 1rem;
+        height: 100%;
+        
+    }
+
+    .link__no {
+        display: block;
+    }
+
+    .icono {
+        display: block;
+    }
+
+    .nav:target {
+        display: block;
+    }
+
+    .titulo {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
+    .grid_index {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 200px);
+        grid-template-areas: 
+        "vid"
+        "tex";
+        align-content: stretch;
+        gap: 1rem;
+        height: auto;
+    }  
+    .grid_texto {
+        font-size: 16px;
+    }
+    .grid_video {
+        height: 100%;
+        width: 100%;
+    }
+
+
+}
