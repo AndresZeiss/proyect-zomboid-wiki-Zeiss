@@ -1,0 +1,5 @@
+@for $indice from 1 through 12 {
+    .col-#{$indice} {
+        width: (100%/12) * $indice ;
+    }
+}
