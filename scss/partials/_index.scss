@@ -21,8 +21,7 @@
 
     &_video {
     grid-area: vid;
-    width: 560px;
-    height: 315px;
+    @include sizes (560px, 315px);
     object-fit: cover;
     
     }

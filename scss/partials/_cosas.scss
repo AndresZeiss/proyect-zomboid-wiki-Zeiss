@@ -6,6 +6,9 @@
 .fondo {
     background-color: $colorprincipal;
 }
+.fondo_2 {
+    background-color: $colorsecundario;
+}
 .main{
     margin-top: 1rem;
 }
@@ -23,4 +26,10 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
    

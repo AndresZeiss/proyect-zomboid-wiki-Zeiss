@@ -3,3 +3,22 @@
         width: (100%/12) * $indice ;
     }
 }
+$textos:(
+    color: black,
+    centro: center,
+    justify: justify,
+    tamaño: 20px,
+    fuente: arial,
+);
+.jtextp {
+    color: map-get($textos, color);
+    text-align: map-get($textos, justify);
+    font-size: map-get($textos, tamaño);
+    font-family: map-get($textos, fuente);
+}
+.jtextt {
+    color: map-get($textos, color);
+    text-align: map-get($textos, centro);
+    font-size: 26px;
+    font-family: map-get($textos, fuente);
+}

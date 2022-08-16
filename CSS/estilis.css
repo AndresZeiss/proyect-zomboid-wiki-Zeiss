@@ -6,6 +6,9 @@
 .fondo {
   background-color: #333333; }
 
+.fondo_2 {
+  background-color: white; }
+
 .main {
   margin-top: 1rem; }
 
@@ -95,7 +98,7 @@
 
 .vfoto {
   width: 100%;
-  max-height: 200px; }
+  height: 200px; }
 
 .vtitulos {
   margin-top: 1.5rem;
@@ -151,6 +154,18 @@
 
 .col-12 {
   width: 100%; }
+
+.jtextp {
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  font-family: arial; }
+
+.jtextt {
+  color: black;
+  text-align: center;
+  font-size: 26px;
+  font-family: arial; }
 
 @media screen and (max-width: 425px) {
   .nav {
