@@ -22,3 +22,6 @@ $textos:(
     font-size: 26px;
     font-family: map-get($textos, fuente);
 }
+.jfoto {
+    @include sizes (100%, 100px)
+}
